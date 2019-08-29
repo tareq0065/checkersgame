@@ -9,26 +9,6 @@ class App extends Component {
 
     }
 
-    //The initial setup
-    gameBoard = [
-        [0, 1, 0, 1, 0, 1, 0, 1],
-        [1, 0, 1, 0, 1, 0, 1, 0],
-        [0, 1, 0, 1, 0, 1, 0, 1],
-        [0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0],
-        [2, 0, 2, 0, 2, 0, 2, 0],
-        [0, 2, 0, 2, 0, 2, 0, 2],
-        [2, 0, 2, 0, 2, 0, 2, 0]
-    ];
-    //arrays to store the instances
-    pieces = [];
-    tiles = [];
-
-    //distance formula
-    dist = function (x1, y1, x2, y2) {
-        return Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
-    }
-
     render() {
         return (
             <div className='app'>
